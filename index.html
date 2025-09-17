@@ -12,33 +12,89 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="about">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm [Your Name], a [Your Profession/Field]. I love building projects and solving problems.</p>
-  </section>
+  <main>
+    <!-- About -->
+    <section id="about">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Hello, I'm a Computer Engineering student at Stony Brook University with a strong interest in embedded systems, VLSI, and robotics.</p>
+    </section>
 
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="project">
-      <h3>Project 1</h3>
-      <p>Description of Project 1.</p>
-    </div>
-    <div class="project">
-      <h3>Project 2</h3>
-      <p>Description of Project 2.</p>
-    </div>
-  </section>
+    <!-- Projects -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Smart Environmental Sensor</h3>
+          <p>A compact IoT-enabled ESP32 device that measures temperature, humidity, air quality, and pressure with real-time visualization and SD card data logging. Supports Wi-Fi connectivity for cloud monitoring.</p>
+          <p><strong>Date:</strong> August 2025 – Present</p>
+        </article>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="huahuanngg@gmail.com">huahuanngg@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/hua-huang-74a336226/" target="_blank">LinkedIn</a></p>
-  </section>
+        <article class="card">
+          <h3>RISC-V CPU</h3>
+          <p>Implemented a single-cycle RISC-V CPU in Verilog, including modular datapath and control logic components. Supported RV32I instruction types with testbenches and waveform debugging.</p>
+          <p><strong>Date:</strong> July 2025 – August 2025</p>
+        </article>
+
+        <article class="card">
+          <h3>4-bit ALU</h3>
+          <p>Designed a 4-bit ALU in Verilog supporting six arithmetic/logic operations. Built modular testbenches and displayed results using a 7-segment display interface.</p>
+          <p><strong>Date:</strong> April 2025</p>
+        </article>
+
+        <article class="card">
+          <h3>Automated Pill Dispenser</h3>
+          <p>Built an Arduino-based pill dispenser with custom circuit wiring and control logic in C++. Features alarm system and optimized user interaction for accurate dispensing.</p>
+          <p><strong>Date:</strong>October 2024</p>
+        </article>
+
+        <article class="card">
+          <h3>Digital Alarm Clock</h3>
+          <p>Created a PCB-based alarm clock integrating SPICE simulations, microcontroller design, and multiplexed display control. Embedded software in C managed alarms and display output.</p>
+          <p><strong>Date:</strong> Feb – May 2024</p>
+          <img src="alarm_clock.mov" alt="Digital Alarm Clock">
+        </article>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research">
+      <h2>My Research</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Estimating Causality in Time-Series Data using Wavelet Transform</h3>
+          <p>Exploring signal-processing methods for causal inference in biological time-series data using wavelet transforms and frequency-domain analysis.</p>
+          <p><strong>Date:</strong> August 2025 – Present</p>
+        </article>
+
+        <article class="card">
+          <h3>Deploying Micro-ROS on ESP32 for Low-Cost Robotic Pathfinding</h3>
+          <p>Programmed the LeKiwi robot with micro-ROS on an ESP32-S3, integrating ultrasonic and RPLidar sensors with ROS 2 nodes for obstacle detection and localization.</p>
+          <p><strong>Date:</strong> June – August 2025</p>
+          <a href="SOAR_2025.pdf" target="_blank">View Poster</a>
+        </article>
+
+        <article class="card">
+          <h3>MICRONAUT: Modeling the Dual Regulation of GFP</h3>
+          <p>Led the software team at the Grand Jamboree in Paris (Gold Medal). Built deterministic and stochastic models in MATLAB, performed molecular docking of miRNA-326/Ago2, and ran molecular dynamics simulations with GROMACS.</p>
+          <p><strong>Date:</strong> Jan – Oct 2024</p>
+          <a href="iGEM_poster.pdf" target="_blank">View Poster</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:huahuanngg@gmail.com">huahuanngg@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/hua-huang-74a336226/" target="_blank">LinkedIn</a></p>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Hua Huang. All rights reserved.</p>
