@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hua Huang's Portfolio</title>
+  <title>Hua Huang | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,86 +22,125 @@
     <!-- About -->
     <section id="about">
       <h1>Welcome to My Portfolio</h1>
-      <p>Hello, I'm a Computer Engineering student at Stony Brook University with a strong interest in embedded systems, VLSI, and robotics.</p>
+      <p>Hello! I'm <strong>Hua Huang</strong>, a Computer Engineering student at Stony Brook University. 
+      My interests span <strong>embedded systems, robotics, VLSI design</strong>, and <strong>computational biology</strong>. 
+      I enjoy bridging hardware and software to create efficient, data-driven systems.</p>
     </section>
 
     <!-- Projects -->
     <section id="projects">
-      <h2>My Projects</h2>
+      <h2>Projects</h2>
       <div class="card-grid">
-        <article class="card">
-          <h3>Smart Environmental Sensor</h3>
-          <p>A compact IoT-enabled ESP32 device that measures temperature, humidity, air quality, and pressure with real-time visualization and SD card data logging. Supports Wi-Fi connectivity for cloud monitoring.</p>
-          <p><strong>Date:</strong> August 2025 – Present</p>
-            <p><strong>Skills:</strong>IoT, I&sup2C, SPI, ESP32, C++</I></p>
-        </article>
 
         <article class="card">
           <h3>RISC-V CPU</h3>
-          <p>Implemented a single-cycle RISC-V CPU in Verilog, including modular datapath and control logic components. Supported RV32I instruction types with testbenches and waveform debugging.</p>
-          <p><strong>Date:</strong> July 2025 – August 2025</p>
-          <p><strong>Skills:</strong>Verilog, Quartus, FPGAs, Digital Logic Design</I>
+          <p class="role">Verilog | FPGA Simulation | Digital Logic</p>
+          <p>Built a modular single-cycle RISC-V CPU supporting all RV32I instructions with testbenches and waveform debugging.</p>
+          <details>
+            <summary>Read More</summary>
+            <p>Designed modular datapath and control logic blocks (ALU, register file, PC update logic). 
+            Verified design correctness through simulation in ModelSim, analyzing waveform signals and instruction timing. 
+            Explored optimization trade-offs between cycle time and area utilization.</p>
+          </details>
+          <p class="date">September 2025 – Present</p>
         </article>
 
         <article class="card">
-          <h3>4-bit ALU</h3>
-          <p>Designed a 4-bit ALU in Verilog supporting six arithmetic/logic operations. Built modular testbenches and displayed results using a 7-segment display interface.</p>
-          <p><strong>Date:</strong> April 2025</p>
-          <p><strong>Skills:</strong>Verilog, Quartus, FPGAs, Digital Logic Design</I></p>
+          <h3>Smart Environmental Sensor</h3>
+          <p class="role">ESP32 | IoT | Embedded C++ | MQTT | SPI | I²C</p>
+          <p>A compact, Wi-Fi-enabled IoT system that measures temperature, humidity, air quality, and pressure. 
+          Includes real-time visualization, microSD logging, and cloud connectivity.</p>
+          <details>
+            <summary>Read More</summary>
+            <p>Developed efficient SPI data handling and used MQTT to publish sensor data to Adafruit IO. 
+            Designed a TFT dashboard for real-time environmental tracking and ensured long-term data persistence 
+            using a microSD interface. Deployed firmware updates over Wi-Fi using OTA programming.</p>
+          </details>
+          <a href="https://io.adafruit.com/Katsushen/public" target="_blank">View Live Dashboard</a>
+          <p class="date">August 2025 – September 2025</p>
         </article>
 
         <article class="card">
           <h3>Automated Pill Dispenser</h3>
-          <p>Built an Arduino-based pill dispenser with custom circuit wiring and control logic in C++. Features alarm system and optimized user interaction for accurate dispensing.</p>
-          <p><strong>Date:</strong>October 2024</p>
-          <p><strong>Skills:</strong>Arduino, C++</I></p>
+          <p class="role">Arduino | Embedded C++ | Circuit Design</p>
+          <p>Arduino-controlled device with alarm and time-based dispensing mechanism for user medication management.</p>
+          <details>
+            <summary>Read More</summary>
+            <p>Integrated stepper motors, real-time clock (RTC), and pushbutton interrupts to dispense pills accurately. 
+            Designed PCB wiring and 3D printed enclosure. Implemented user feedback via buzzer and LED status lights.</p>
+          </details>
+          <p class="date">October 2024</p>
         </article>
 
         <article class="card">
           <h3>Digital Alarm Clock</h3>
-          <p>Created a PCB-based alarm clock integrating SPICE simulations, microcontroller design, and multiplexed display control. Embedded software in C managed alarms and display output.</p>
-          <p><strong>Date:</strong> Feb – May 2024</p>
-          <p><strong>Skills:</strong>PCBA, soldering, SPICE, C</I></p>
-          <video width="240" height="240" controls>
-            <source src="alarm_clock.mp4" type="video/mp4">
-          Your browser does not support the video tag.
+          <p class="role">C | Microcontrollers | PCB | SPICE</p>
+          <p>Designed a PCB-based digital clock integrating multiplexed 7-segment displays with programmable alarms.</p>
+          <details>
+            <summary>Read More</summary>
+            <p>Used SPICE to model signal timing and verify power consumption. 
+            Programmed alarm scheduling logic and real-time display refreshing using a microcontroller. 
+            Built modular PCB layout with debugging headers for easier testing.</p>
+          </details>
+          <video controls width="320">
+            <source src="alarm_clock.mov" type="video/mp4">
           </video>
+          <p class="date">February – May 2024</p>
         </article>
+
       </div>
     </section>
 
     <!-- Research -->
     <section id="research">
-      <h2>My Research</h2>
+      <h2>Research</h2>
       <div class="card-grid">
+
         <article class="card">
           <h3>Estimating Causality in Time-Series Data using Wavelet Transform</h3>
-          <p>Exploring signal-processing methods for causal inference in biological time-series data using wavelet transforms and frequency-domain analysis.</p>
-          <p><strong>Date:</strong> August 2025 – Present</p>
-          <p><strong>Skills:</strong>Digital Signal Processing</I></p>
+          <p class="role">MATLAB | Signal Processing | Data Science</p>
+          <p>Investigating signal decomposition methods to infer causality in biological systems through time-frequency analysis.</p>
+          <details>
+            <summary>Read More</summary>
+            <p>Developing custom MATLAB scripts for multi-scale wavelet decomposition and phase synchronization metrics. 
+            Comparing performance with Granger causality and transfer entropy in non-stationary biological datasets.</p>
+          </details>
+          <p class="date">August 2025 – Present</p>
         </article>
 
         <article class="card">
-          <h3>Deploying Micro-ROS on ESP32 for Low-Cost Robotic Pathfinding</h3>
-          <p>Programmed the LeKiwi robot with micro-ROS on an ESP32-S3, integrating ultrasonic and RPLidar sensors with ROS 2 nodes for obstacle detection and localization.</p>
-          <p><strong>Date:</strong> June – August 2025</p>
-          <p><strong>Skills:</strong>Linux, ROS2, microROS, PCB design, UART, ESP32</I></p>
+          <h3>Deploying Micro-ROS on ESP32 for Robotic Pathfinding</h3>
+          <p class="role">Micro-ROS | ESP32-S3 | ROS 2 | Python</p>
+          <p>Integrated micro-ROS with ultrasonic and Lidar sensors to enable autonomous obstacle detection and navigation.</p>
+          <details>
+            <summary>Read More</summary>
+            <p>Implemented custom ROS 2 nodes for sensor fusion and serial communication between microcontroller and host PC. 
+            Used TF2 for real-time coordinate tracking. Optimized pathfinding latency via lightweight DDS communication.</p>
+          </details>
           <a href="https://drive.google.com/file/d/12G_umaW3T4hRadokOVqTytF0hc2NR7_H/view?usp=sharing" target="_blank">View Poster</a>
+          <p class="date">June – August 2025</p>
         </article>
 
         <article class="card">
           <h3>MICRONAUT: Modeling the Dual Regulation of GFP</h3>
-          <p>Led the software team at the Grand Jamboree in Paris (Gold Medal). Built deterministic and stochastic models in MATLAB, performed molecular docking of miRNA-326/Ago2, and ran molecular dynamics simulations with GROMACS.</p>
-          <p><strong>Date:</strong> Jan – Oct 2024</p>
-          <p><strong>Skills:</strong>Digital Signal Processing, Linux, MATLAB</I></p>
+          <p class="role">MATLAB | GROMACS | Molecular Docking | Systems Biology</p>
+          <p>Led a computational biology project simulating miRNA-Ago2 regulation dynamics in synthetic circuits (Gold Medal, iGEM 2024).</p>
+          <details>
+            <summary>Read More</summary>
+            <p>Built deterministic ODE and stochastic SSA models for GFP expression. 
+            Simulated Ago2–miRNA binding using AutoDock and GROMACS molecular dynamics. 
+            Presented results at the Grand Jamboree in Paris, showcasing cross-disciplinary modeling between biology and computation.</p>
+          </details>
           <a href="https://drive.google.com/file/d/1Y_FZOgarEbNdGd5c1tPZY9zVZaJzkInS/view?usp=sharing" target="_blank">View Poster</a>
+          <p class="date">January – October 2024</p>
         </article>
+
       </div>
     </section>
 
     <!-- Contact -->
     <section id="contact">
-      <h2>Contact Me</h2>
+      <h2>Contact</h2>
       <p>Email: <a href="mailto:huahuanngg@gmail.com">huahuanngg@gmail.com</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/hua-huang-74a336226/" target="_blank">LinkedIn</a></p>
     </section>
@@ -110,7 +149,5 @@
   <footer>
     <p>&copy; 2025 Hua Huang. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

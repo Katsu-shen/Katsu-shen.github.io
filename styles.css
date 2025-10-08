@@ -84,6 +84,7 @@ footer {
   padding: 1rem;
 }
 
+<<<<<<< HEAD
 #scroll-to-top {
   position: fixed;
   bottom: 20px;
@@ -101,4 +102,16 @@ footer {
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.5s ease;
+=======
+.card video,
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  object-fit: cover;
+>>>>>>> 8a5edad (minor changes)
 }
